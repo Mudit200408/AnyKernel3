@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Nexus Kernel
+kernel.string=Star Kernel
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -34,12 +34,10 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 case "$ZIPFILE" in
     *ksu*)
-    ui_print " • Using KSU variant";
-    rm Image;
-    mv ksu/Image $home/Image;
+    ui_print "All variants are KSU variant :)";
     ;;
     *)
-    ui_print " • Using normal variant";
+    ui_print "Star Magic Initialized";
     ;;
 esac
     
